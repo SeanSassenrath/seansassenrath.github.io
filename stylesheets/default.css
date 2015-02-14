@@ -14,27 +14,38 @@ ul {
 }
 p {
     text-align: center;
-    margin: 15px auto;
+    margin: 12px auto;
     padding: 15px;
     background-color: #4E545A;
     color: white;
     border-radius: 2px;
+    font-family: 'Cantarell', sans-serif;
 }
-h2 {
-    text-align: center;
-    background-color: #575E65;
-    color: white;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 2px;
-}
+/*h2 {
+  text-align: center;
+  background-color: #575E65;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 2px;
+  font-family: 'Oswald', sans-serif;
+}*/
 a {
   color: white;
   border-radius: 2px;
   background-color: #98bf21;
   text-align: center;
-  padding: 10px 20px;
+  padding: 7px 20px;
   text-decoration: none;
+  font-family: 'Fjalla One';
+  font-size: 20px;
+}
+a:hover {
+  background-color: white;
+  color: #98bf21;
+}
+h5 {
+  color: #545657;
 }
 
 /*Container Styles*/
@@ -46,7 +57,21 @@ a {
   margin: 0 auto;
 }
 
-/*Top Navigation Bar - No Longer Needed*/
+.projects {
+  margin: 20px 0px 40px 0px;
+}
+#leftImage {
+  margin-right: 25px;
+}
+#rightImage {
+  margin-left: 25px;
+}
+
+.bottomNav {
+  margin-top: 45px;
+}
+
+/* >>>>>>>  Top Nav Bar - No Longer Needed <<<<<<<<*/
 
 /*a#projects {
   padding:10px 23px 8px;
@@ -64,9 +89,9 @@ ul #contact {
    padding:10px 23px 8px;
 }*/
 
-/*Bottom Navigation Bar*/
+/* >>>>>>>  Bottom Nav Bar <<<<<<<<*/
 
-ul #linkedin {
+/*ul #linkedin {
   padding:10px 23px 8px;
   margin-right: 5px;
 }
@@ -82,8 +107,14 @@ ul #facebook {
    padding:10px 23px 8px;
    background-color: blue;
    margin-right: 296px;
+}*/
+
+#addSean {
+  padding: 25px 353px;
 }
-ul #contactbottom {
-   padding:10px 23px 8px;
-   background-color: blue;
+.bottomNav {
+  margin-top: 45px;
+}
+#contactBottom {
+   margin-left: 373px;
 }
