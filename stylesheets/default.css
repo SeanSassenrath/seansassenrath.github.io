@@ -12,14 +12,20 @@ ul {
     padding: 0px;
     text-align: right;
 }
+span {
+  font-size: 30px;
+  font-family: 'Fjalla One', sans-serif;
+}
 p {
-    text-align: center;
+    text-align: left;
     margin: 12px auto;
-    padding: 15px;
+    padding: 10px 35px 10px;
+    height: 120px;
     background-color: #4E545A;
     color: white;
+    opacity: .6;
     border-radius: 2px;
-    font-family: 'Cantarell', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /*h2 {
   text-align: center;
@@ -37,13 +43,23 @@ a {
   text-align: center;
   padding: 7px 20px;
   text-decoration: none;
-  font-family: 'Fjalla One';
+  font-family: 'Fjalla One', sans-serif;
   font-size: 20px;
 }
 a:hover {
   background-color: white;
   color: #98bf21;
 }
+/*h3 {
+  text-align: left;
+  background-color: #4E545A;
+  color: white;
+  opacity: .6;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0px -12px;
+  padding: 5px 35px 5px;
+}*/
 h5 {
   color: #545657;
 }
@@ -56,6 +72,8 @@ h5 {
   text-align: center;
   margin: 0 auto;
 }
+
+/* >>>>>>>  Project Section <<<<<<<<*/
 
 .projects {
   margin: 20px 0px 40px 0px;
@@ -111,10 +129,15 @@ ul #facebook {
 
 #addSean {
   padding: 25px 353px;
+  background-color: #D50F37;
+}
+#addSean:hover {
+  background-color: white;
+  color: #D50F37;
 }
 .bottomNav {
   margin-top: 45px;
 }
 #contactBottom {
-   margin-left: 373px;
+   margin-left: 410px;
 }
