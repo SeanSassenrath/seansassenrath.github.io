@@ -1,11 +1,9 @@
 body {
   background-color: #101A23;
 }
-
 li {
     display: inline;
 }
-
 ul {
     list-style-type: none;
     margin: 20px 0px 15px 0px;
