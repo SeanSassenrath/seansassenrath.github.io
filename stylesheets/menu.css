@@ -1,0 +1,63 @@
+.blogMenu table {
+  margin-left: -2px;
+}
+.blogEntryLeft {
+  margin-right: 25px;
+  background-color: #BEBEBE;
+  width: 300px;
+  height: 373px;
+  border-radius: 2px;
+}
+.blogEntryLeft:hover {
+  background-color: white;
+}
+.blogEntryMiddle {
+  margin-right: 25px;
+  background-color: #BEBEBE;
+  width: 300px;
+  height: 373px;
+  border-radius: 2px;
+}
+.blogEntryMiddle:hover {
+  background-color: white;
+}
+.blogEntryRight {
+  background-color: #BEBEBE;
+  width: 300px;
+  height: 373px;
+  border-radius: 2px;
+}
+.blogEntryRight:hover {
+  background-color: white;
+}
+.blogMenu img {
+  margin-top: 15px;
+  background-color: black;
+  height: 200px;
+  width: 200px;
+}
+.blogMenu h3 {
+  margin: 5px;
+  padding: 3px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+.blogMenu h4 {
+  margin: 5px;
+  padding: 3px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+.blogMenu p {
+    text-align: justify;
+    margin: 10px auto;
+    padding: 10px 20px;
+    height: 57px;
+    background-color: #4E545A;
+    color: white;
+    opacity: 0.6;
+    font-family: "Open Sans",sans-serif;
+}
+.blogMenu a {
+  text-decoration: none;
+}

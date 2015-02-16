@@ -19,7 +19,7 @@ span {
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
 }
-p {
+p#aboutme {
     text-align: left;
     margin: 12px auto;
     padding: 15px 35px 10px;
@@ -60,7 +60,7 @@ h5 {
 /* >>>>>>>  Project Section <<<<<<<<*/
 
 .projects {
-  margin: 20px 0px 30px 0px;
+  margin: 20px 0px 39px 0px;
 }
 #leftImage {
   margin-right: 25px;
@@ -84,6 +84,29 @@ a#addSean {
 .bottomNav {
   margin: 45px 0px 30px;
 }
-#contactBottom {
+li#contactBottom {
    margin-left: 410px;
+}
+
+/* >>>>>>>  Main Page Properties <<<<<<<<*/
+
+a.backMain {
+  color: white;
+  border-radius: 2px;
+  background-color: #D50F37;
+  text-align: center;
+  padding: 7px 20px;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+}
+a.backMain:hover {
+  background-color: white;
+  color: #D50F37;
+}
+li.contactBottomBackMain {
+   margin-left: 253px;
+}
+img.imageMain {
+  margin-bottom: 5px;
 }
