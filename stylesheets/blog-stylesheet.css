@@ -1,0 +1,38 @@
+.blogPost {
+  background-color: #4E545A;
+  border-radius: 2px;
+  text-align: left;
+  margin-top: 10px;
+}
+.blogPost img {
+  margin: 12px 0px 0px 10px;
+  vertical-align: top;
+}
+.blogPost h2 {
+  padding: 12px 35px 0px 35px;
+  margin: 0px;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-weight: normal;
+}
+.blogPost h4 {
+  padding-left: 35px;
+  margin: -10px 0px;
+  color: #D50F37;
+  font-weight: normal;
+  font-family: 'Fjalla One', sans-serif;
+}
+.bottomNavBlog {
+  margin: 15px 0px 30px;
+}
+.blogPost p {
+    text-align: left;
+    margin: 10px auto;
+    padding: 10px 35px;
+    background-color: #4E545A;
+    color: #FFF;
+    opacity: 0.6;
+    border-radius: 2px;
+    font-family: "Open Sans",sans-serif;
+    height: 100%;
+}

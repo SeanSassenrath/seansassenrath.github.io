@@ -1,0 +1,143 @@
+body {
+  background-color: #101A23;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0px 15px 0px;
+    padding: 0px;
+    text-align: right;
+}
+span {
+  font-size: 30px;
+  font-family: 'Fjalla One', sans-serif;
+}
+p {
+    text-align: left;
+    margin: 12px auto;
+    padding: 10px 35px 10px;
+    height: 120px;
+    background-color: #4E545A;
+    color: white;
+    opacity: .6;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+/*h2 {
+  text-align: center;
+  background-color: #575E65;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 2px;
+  font-family: 'Oswald', sans-serif;
+}*/
+a {
+  color: white;
+  border-radius: 2px;
+  background-color: #98bf21;
+  text-align: center;
+  padding: 7px 20px;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+}
+a:hover {
+  background-color: white;
+  color: #98bf21;
+}
+/*h3 {
+  text-align: left;
+  background-color: #4E545A;
+  color: white;
+  opacity: .6;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0px -12px;
+  padding: 5px 35px 5px;
+}*/
+h5 {
+  color: #545657;
+}
+
+/*Container Styles*/
+
+#container {
+  width: 960px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* >>>>>>>  Project Section <<<<<<<<*/
+
+.projects {
+  margin: 20px 0px 40px 0px;
+}
+#leftImage {
+  margin-right: 25px;
+}
+#rightImage {
+  margin-left: 25px;
+}
+
+.bottomNav {
+  margin-top: 45px;
+}
+
+/* >>>>>>>  Top Nav Bar - No Longer Needed <<<<<<<<*/
+
+/*a#projects {
+  padding:10px 23px 8px;
+  margin-right: 5px;
+}
+ul #blog {
+  padding:10px 35px 8px;
+  margin-right: 5px;
+}
+ul #about {
+  padding:10px 27px 8px;
+  margin-right: 5px;
+}
+ul #contact {
+   padding:10px 23px 8px;
+}*/
+
+/* >>>>>>>  Bottom Nav Bar <<<<<<<<*/
+
+/*ul #linkedin {
+  padding:10px 23px 8px;
+  margin-right: 5px;
+}
+ul #github {
+  padding:10px 35px 8px;
+  margin-right: 5px;
+}
+ul #twitter {
+  padding:10px 27px 8px;
+  margin-right: 5px;
+}
+ul #facebook {
+   padding:10px 23px 8px;
+   background-color: blue;
+   margin-right: 296px;
+}*/
+
+#addSean {
+  padding: 25px 353px;
+  background-color: #D50F37;
+}
+#addSean:hover {
+  background-color: white;
+  color: #D50F37;
+}
+.bottomNav {
+  margin-top: 45px;
+}
+#contactBottom {
+   margin-left: 410px;
+}
