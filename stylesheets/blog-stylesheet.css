@@ -36,3 +36,7 @@
     font-family: "Open Sans",sans-serif;
     height: 100%;
 }
+td .imageTd {
+
+  margin-top:-303px !important;
+}
