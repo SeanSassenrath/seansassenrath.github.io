@@ -13,10 +13,10 @@ li {
 }
 a {
   text-decoration: none;
-  color: #3F1A56;
+  color: #101A23;
 }
 a.currentPage {
-  color: #98bf21;
+  color: #101A23;
   border-radius: 2px;
   background-color: white;
   text-align: center;
