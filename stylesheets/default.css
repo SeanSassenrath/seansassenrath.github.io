@@ -1,5 +1,12 @@
+/* >>>>>>>  Common Styles <<<<<<<<*/
 body {
   background-color: #101A23;
+}
+ul {
+    list-style-type: none;
+    margin: 20px 0px 15px 0px;
+    padding: 0px;
+    text-align: right;
 }
 li {
     display: inline;
@@ -8,15 +15,33 @@ a {
   text-decoration: none;
   color: #3F1A56;
 }
-a:visited {
-  color: #8B7599;
+a.currentPage {
+  color: #98bf21;
+  border-radius: 2px;
+  background-color: white;
+  text-align: center;
+  padding: 7px 20px;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
 }
-ul {
-    list-style-type: none;
-    margin: 20px 0px 15px 0px;
-    padding: 0px;
-    text-align: right;
+a.nav{
+  color: white;
+  border-radius: 2px;
+  background-color: #98bf21;
+  text-align: center;
+  padding: 7px 20px;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
 }
+a.nav:hover {
+  background-color: white;
+  color: #98bf21;
+}
+
+/* >>>>>>>  Index Styles <<<<<<<<*/
+
 span {
   font-size: 30px;
   font-family: 'Fjalla One', sans-serif;
@@ -36,20 +61,6 @@ p#aboutme {
     opacity: .6;
     border-radius: 2px;
     font-family: 'Open Sans', sans-serif;
-}
-a.nav{
-  color: white;
-  border-radius: 2px;
-  background-color: #98bf21;
-  text-align: center;
-  padding: 7px 20px;
-  text-decoration: none;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 20px;
-}
-a.nav:hover {
-  background-color: white;
-  color: #98bf21;
 }
 h5#bottomNotes {
   color: #545657;
