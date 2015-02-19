@@ -4,6 +4,9 @@ body {
 li {
     display: inline;
 }
+a {
+  text-decoration: none;
+}
 ul {
     list-style-type: none;
     margin: 20px 0px 15px 0px;
@@ -44,7 +47,7 @@ a.nav:hover {
   background-color: white;
   color: #98bf21;
 }
-h5 {
+h5#bottomNotes {
   color: #545657;
 }
 
@@ -57,13 +60,21 @@ h5 {
   margin: 0 auto;
 }
 
+/* >>>>>>>  Header Image <<<<<<<<*/
+
+/*img#headerImage {
+  width: 960px;
+}*/
+
 /* >>>>>>>  Project Section <<<<<<<<*/
 
 .projects {
-  margin: 20px 0px 39px 0px;
+  margin: 20px 0px 40px 0px;
 }
 #leftImage {
   margin-right: 25px;
+}
+#middleImage {
 }
 #rightImage {
   margin-left: 25px;

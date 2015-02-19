@@ -7,7 +7,6 @@
 }
 .blogPost img {
   margin: 23px 0px 0px;
-  opacity: 1 !important;
 }
 .blogPost h1 {
   padding: 12px 35px 0px 35px;
@@ -48,4 +47,13 @@ h3#blogNav:hover {
 }
 a#blogNav {
   text-decoration: none;
+}
+
+/*<<<<<<<<<< ABOUT ME >>>>>>>>>*/
+
+#aboutMe img{
+  height: 200px;
+  width: 200px;
+  margin-left: 35px;
+  display: inline;
 }
