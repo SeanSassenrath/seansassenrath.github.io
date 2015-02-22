@@ -14,6 +14,7 @@
   font-family: 'Fjalla One', sans-serif;
   color: white;
   font-weight: normal;
+  font-size: 50px
 }
 .blogPost h3 {
   padding-left: 35px;
@@ -21,6 +22,14 @@
   color: #D50F37;
   font-weight: normal;
   font-family: 'Fjalla One', sans-serif;
+}
+.blogPost h2 {
+  margin-bottom: 0px;
+  padding: 0px 35px 0px 35px;
+  color: #DFF79E;
+  font-weight: normal;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
 }
 .blogPost p {
     text-align: justify;
@@ -32,6 +41,12 @@
     border-radius: 2px;
     font-family: "Open Sans",sans-serif;
     height: 100%;
+}
+.blogPost span {
+  padding: 0px 70px 15px 35px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  color: #87C9C2;
 }
 .bottomNavBlog {
   margin: 18px 0px 30px;
