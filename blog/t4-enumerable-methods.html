@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <title>Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+   <div id="container">
+      <ul>
+        <li><a class="nav" href="../index.html">HOME</a></li>
+        <li><a class="nav" href="../projects/projects-menu.html">PROJECTS</a></li>
+        <li><a class="currentPage" href="../blog/blog-menu.html">BLOG</a></li>
+        <li><a class="nav" href="../about/about.html">ABOUT</a></li>
+        <li><a class="nav" href="?">CONTACT</a></li>
+      </ul>
+      <img src="http://seabeaches.com/images/demo/slide01.jpg"/>
+      <div class="blogPost">
+        <h1>THE #MAP METHOD</h1>
+        <h3>2.28.2015</h3>
+        <h2 class="blogPost">WHAT IS #MAP?</h2>
+        <p>
+         The method #map is built into the Enumerable module of Ruby. Its main function is to:
+        </p>
+        <p>1. Traverse (move across) the array from element to element.<br/> 2. Manipulate the elements one by one via a code block.<br/>3. Produce an entirely new array of the manipulated objects.<br/>
+        </p>
+        <p>
+        As you can see from the points above, #map is a similar method to #each as it traverses over elements inside an array, but with a few key distinctions. The #each method iterates over an array, but does not change it in any way, even if passed a code block.<br>
+        </p>
+        <span class="blogPost">array = [10, 20, 30]</span><br/>
+        <span class="blogPost">array.each {|i| i * 2}</span></br>
+        <span class="blogPost">=>[10, 20, 30]</span>
+        <p>
+        As you can see from the example, #each returned the original elements from the array and didn't change them at all. So then, how do we iterate over this array and multiply each element by 2? This is where #map comes into play. With #map we can go through the array, transform each element, and create a new array with the result.
+        </p>
+        <span class="blogPost">array = [10, 20, 30]</span><br/>
+        <span class="blogPost">array.map {|i| i * 2}</span></br>
+        <span class="blogPost">=>[20, 40, 60]</span>
+        <p>
+        Sucess! Through using #map we were able to take the element 10, multiply it by 2 and make it 20! We took 20 and made it 40, and so on.
+        </p>
+        <p>Now we know how to change the elements of an array with the #map method, but the fun doesn't stop there. As I mentioned above, #map creates an entirely new array meaning that we can store these new values into a variable without overwritting our original array!! How cool is that?! Let's give it a shot.
+        </p>
+        <span class="blogPost">array = [10, 20, 30]</span><br/>
+        <span class="blogPost">times_two = array.map {|i| i * 2}</span></br>
+        <span class="blogPost">puts times_two</span><br/>
+        <span class="blogPost">=>[20, 40, 60]</span><br/>
+        <span class="blogPost">puts array</span><br/>
+        <span class="blogPost">=>[10, 20, 30]</span>
+        <p>
+        Looking closely, we can see that calling the #map variable "times_two" gives us the new array with modified elements. When we call the original array "array" it prints out the original element values. However, let's say you do in fact want to change the elements of the original array, we can do that too by using the method #map!. This will change "array" in the example above to print the modified values.
+        </p>
+        <p>
+        There you have it! The in's and out's of the #map method! It's definitely a handy card to have up your ruby sleave when manipulating data structures.
+        </p>
+        <a id="blogNav" href=""><h3 id="blogNav">NEXT POST</h3></a>
+        <a id="blogNav" href="c4-tech-issues.html"><h3 id="blogNav">PREVIOUS POST</h3></a>
+      </div>
+    <ul class="bottomNavBlog">
+        <li><a class="nav" href="https://www.linkedin.com/in/seansassenrath/en">LINKED IN</a></li>
+        <li><a class="nav" href="https://github.com/SeanSassenrath">GITHUB</a></li>
+        <li><a class="nav" href="https://www.twitter.com/seansassenrath">TWITTER</a></li>
+        <li><a class="nav" href="https://www.facebook.com/sassenrath">FACEBOOK</a></li>
+        <li><a class="backMain" href="blog-menu.html">BACK TO BLOGS</a></li>
+        <li class="contactBottomBackMain"><a class="nav" href="?">CONTACT</a></li>
+    </ul>
+    <h5>Sean Sassenrath - Web Dev 2015</h5>
+  </div>
+</body>
+</html>
+
