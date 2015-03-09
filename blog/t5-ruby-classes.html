@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title>Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+   <div id="container">
+      <ul>
+        <li><a class="nav" href="../index.html">HOME</a></li>
+        <li><a class="nav" href="../projects/projects-menu.html">PROJECTS</a></li>
+        <li><a class="currentPage" href="../blog/blog-menu.html">BLOG</a></li>
+        <li><a class="nav" href="../about/about.html">ABOUT</a></li>
+        <li><a class="nav" href="?">CONTACT</a></li>
+      </ul>
+      <img src="http://seabeaches.com/images/demo/slide01.jpg"/>
+      <div class="blogPost">
+        <h1>RUBY CLASSES</h1>
+        <h3>3.5.2015</h3>
+        <h2 class="blogPost">WORKING OUT WITH RUBY CLASSES</h2>
+        <p>
+        Coding design and architecture is crucial when it comes to OOP (Object Oriented Programming). It’s important to build code that is organized, easy to read and flexible to updates. Fortunately, Ruby has a great tool for helping us maintain an organized structure, this tool is called a class. A class is a blueprint for creating individual objects with certain characteristics and functions. It’s best that a class is used for one single responsibility or purpose. For this post lets create a class called “GymWeight”.
+        </p>
+        <span class="blogPost">class GymWeight</span><br/>
+        <span class="blogPost">end</span></br>
+        <p>
+          There we have it! Our class has been created. Since this is a blue print for any number of different types of weights, let’s begin filling it in with some characteristics.
+        </p>
+          <span class="blogPost">class GymWeight</span><br/>
+            <span class="blogPost">--def initialize(weight, material)</span><br/>
+              <span class="blogPost">----@weight = weight</span><br/>
+              <span class="blogPost">----@amount = material</span><br/>
+            <span class="blogPost">--end</span><br/>
+          <span class="blogPost">end</span><br/>
+        <p>
+        Now we have some characteristics of the class GymWeight by calling on a special method called “initialize”. This is a method that “creates” the class and allows us to pass arguments through the class (weight and material) for our class to use. In order to use these arguments in different methods of our class, we assign them instance variables. These special variables store the arguments as usable objects throughout our program (ie we can use them in different methods).
+        </p>
+        <span class="blogPost">class GymWeight</span><br/>
+          <span class="blogPost">--def initialize(weight, material)</span><br/>
+            <span class="blogPost">----@weight = weight</span><br/>
+            <span class="blogPost">----@material = material</span><br/>
+          <span class="blogPost">--end</span><br/>
+          <span class="blogPost">--def weight_amount</span><br/>
+            <span class="blogPost">----if @weight > 100</span><br/>
+               <span class="blogPost">------puts "You can lift #{@weight}lbs?! That’s heavy."</span><br/>
+            <span class="blogPost">----else</span><br/>
+               <span class="blogPost">------puts "You can lift {@weight}lbs? Not bad."</span><br/>
+            <span class="blogPost">----end</span><br/>
+          <span class="blogPost">--end</span><br/>
+          <span class="blogPost">--def material_type</span><br/>
+            <span class="blogPost">----puts "My favorite type of weight is made out of #{@material}."</span><br/>
+          <span class="blogPost">--end</span><br/>
+        <span class="blogPost">end</span><br/>
+        <p></p>
+        <span class="blogPost">GoldsGym = GymWeight.new(150, "metal")</span><br/>
+        <span class="blogPost">GoldsGym.weight_amount</span><br/>
+        <span class="blogPost">GoldsGym.material_type</span><br/>
+        <p>
+        There looks like a lot here I know, but let’s take it piece by piece. First, we created two new methods “weight_amount” and “material_type”. We then feed them the arguments that were passed to the GymWeight class when we create the object “GoldsGym”. In this case, it was “150” and “metal”. We could then call on the method inside the our class on the GoldsGym object to return the values of the program.
+        </p>
+        <p>
+          That’s all there is to it! Not the most amazing example I know, but hopefully it gives you a sense of how classes work and when to use them.
+        </p>
+        <a id="blogNav" href="c1-chefs-kitchen.html"><h3 id="blogNav">NEXT POST</h3></a>
+        <a id="blogNav" href="c5-feedback.html"><h3 id="blogNav">PREVIOUS POST</h3></a>
+      </div>
+    <ul class="bottomNavBlog">
+        <li><a class="nav" href="https://www.linkedin.com/in/seansassenrath/en">LINKED IN</a></li>
+        <li><a class="nav" href="https://github.com/SeanSassenrath">GITHUB</a></li>
+        <li><a class="nav" href="https://www.twitter.com/seansassenrath">TWITTER</a></li>
+        <li><a class="nav" href="https://www.facebook.com/sassenrath">FACEBOOK</a></li>
+        <li><a class="backMain" href="blog-menu.html">BACK TO BLOGS</a></li>
+        <li class="contactBottomBackMain"><a class="nav" href="?">CONTACT</a></li>
+    </ul>
+    <h5>Sean Sassenrath - Web Dev 2015</h5>
+  </div>
+</body>
+</html>
+
