@@ -42,15 +42,15 @@ a.nav:hover {
 
 /* >>>>>>>  Index Styles <<<<<<<<*/
 
-span {
+/*span {
   font-size: 30px;
   font-family: 'Fjalla One', sans-serif;
-}
-#highlight {
+}*/
+/*#highlight {
   color: #98bf21;
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
-}
+}*/
 p#aboutme {
     text-align: left;
     margin: 12px auto;

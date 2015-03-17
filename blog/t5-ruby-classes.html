@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" href="src/tomorrow_night.css">
   <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -25,40 +26,15 @@
         <p>
         Coding design and architecture is crucial when it comes to OOP (Object Oriented Programming). It’s important to build code that is organized, easy to read and flexible to updates. Fortunately, Ruby has a great tool for helping us maintain an organized structure, this tool is called a class. A class is a blueprint for creating individual objects with certain characteristics and functions. It’s best that a class is used for one single responsibility or purpose. For this post lets create a class called “GymWeight”.
         </p>
-        <span class="blogPost">class GymWeight</span><br/>
-        <span class="blogPost">end</span></br>
+        <pre class="prettyprint">class GymWeight<br/>end</pre>
         <p>
           There we have it! Our class has been created. Since this is a blue print for any number of different types of weights, let’s begin filling it in with some characteristics.
         </p>
-          <span class="blogPost">class GymWeight</span><br/>
-            <span class="blogPost">--def initialize(weight, material)</span><br/>
-              <span class="blogPost">----@weight = weight</span><br/>
-              <span class="blogPost">----@amount = material</span><br/>
-            <span class="blogPost">--end</span><br/>
-          <span class="blogPost">end</span><br/>
+        <pre class="prettyprint">class GymWeight<br/>  def initialize(weight, material)<br/>    @weight = weight<br/>    @amount = material<br/>  end<br/>end</pre>
         <p>
         Now we have some characteristics of the class GymWeight by calling on a special method called “initialize”. This is a method that “creates” the class and allows us to pass arguments through the class (weight and material) for our class to use. In order to use these arguments in different methods of our class, we assign them instance variables. These special variables store the arguments as usable objects throughout our program (ie we can use them in different methods).
         </p>
-        <span class="blogPost">class GymWeight</span><br/>
-          <span class="blogPost">--def initialize(weight, material)</span><br/>
-            <span class="blogPost">----@weight = weight</span><br/>
-            <span class="blogPost">----@material = material</span><br/>
-          <span class="blogPost">--end</span><br/>
-          <span class="blogPost">--def weight_amount</span><br/>
-            <span class="blogPost">----if @weight > 100</span><br/>
-               <span class="blogPost">------puts "You can lift #{@weight}lbs?! That’s heavy."</span><br/>
-            <span class="blogPost">----else</span><br/>
-               <span class="blogPost">------puts "You can lift {@weight}lbs? Not bad."</span><br/>
-            <span class="blogPost">----end</span><br/>
-          <span class="blogPost">--end</span><br/>
-          <span class="blogPost">--def material_type</span><br/>
-            <span class="blogPost">----puts "My favorite type of weight is made out of #{@material}."</span><br/>
-          <span class="blogPost">--end</span><br/>
-        <span class="blogPost">end</span><br/>
-        <p></p>
-        <span class="blogPost">GoldsGym = GymWeight.new(150, "metal")</span><br/>
-        <span class="blogPost">GoldsGym.weight_amount</span><br/>
-        <span class="blogPost">GoldsGym.material_type</span><br/>
+        <pre class="prettyprint">class GymWeight<br/>  def initialize(weight, material)<br/>    @weight = weight<br/>    @material = material<br/>  end<br/><br/>  def weight_amount<br/>    if @weight > 100<br/>      puts "You can lift #{@weight}lbs?! That’s heavy."<br/>    else<br/>      puts "You can lift {@weight}lbs? Not bad."<br/>    end<br/><br/>  end<br/>  def material_type<br/>    puts "My favorite type of weight is made out of #{@material}."<br/>  end<br/>end</br><br/>GoldsGym = GymWeight.new(150, "metal")<br/>GoldsGym.weight_amount<br/>GoldsGym.material_type</pre>
         <p>
         There looks like a lot here I know, but let’s take it piece by piece. First, we created two new methods “weight_amount” and “material_type”. We then feed them the arguments that were passed to the GymWeight class when we create the object “GoldsGym”. In this case, it was “150” and “metal”. We could then call on the method inside the our class on the GoldsGym object to return the values of the program.
         </p>
@@ -78,6 +54,10 @@
     </ul>
     <h5>Sean Sassenrath - Web Dev 2015</h5>
   </div>
+  <script src="src/prettify.js"></script>
+  <script>
+    prettyPrint();
+  </script>
 </body>
 </html>
 

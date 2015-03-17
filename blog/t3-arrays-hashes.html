@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" href="src/tomorrow_night.css">
   <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -34,24 +35,21 @@
 
         <p>Arrays can be created in a couple different ways.  One way is to use brackets, like so:</p>
 
-        <p><span class="blogPost">first_three_months = [“Jan”, “Feb”, “Mar”]</span></p>
+        <pre class="prettyprint">first_three_months = [“Jan”, “Feb”, “Mar”]</pre>
 
         <p>Shortcut Alert! By using the %w notation, we can write out our strings without commas or quotes :)</p>
 
-        <p><span class="blogPost">first_three_months = %w[Jan Feb Mar]</span></p>
+        <pre class="prettyprint">first_three_months = %w[Jan Feb Mar]</pre>
 
         <p>We just created an array called first_three_months! Awesome!</p>
 
         <p>Now the second way to create an array is by using the .new method.  For example:</p>
 
-        <p><span class="blogPost">first_three_months = Array.new</span></p>
+        <pre class="prettyprint">first_three_months = Array.new</pre>
 
-       <p> From there we can index objects into the array:</p>
+        <p> From there we can index objects into the array:</p>
 
-       <p><span class="blogPost">first_three_months[0] = “Jan”</span><br/>
-         <span class="blogPost">first_three_months[1] = “Feb”</span><br/>
-         <span class="blogPost">first_three_months[2] = “Mar”</span><br/>
-       </p>
+        <pre class="prettyprint">first_three_months[2] = “Mar”<br/>first_three_months[1] = “Feb”<br/>first_three_months[0] = “Jan”</pre>
 
         <p>Excellent! You’re on your way to becoming an Array champion! Now let’s see what’s going on in the world of Hashes.</p>
 
@@ -59,24 +57,19 @@
 
         <p>Like Arrays, Hashes are structures that index objects, however instead of using an ordered enumerable system, Hashes use key value pairs. Nothing to it! Instead of one object in brackets like we did in Arrays, we’ll have two objects (the key and the value) in braces for Hashes.  Let’s create a hash to store a username, password and email.</p>
 
-        <p><span class="blogPost">user_info = {<br/>
-             <span class="blogPost">username: sean,</span><br/>
-             <span class="blogPost">password: 1234,</span><br/>
-             <span class="blogPost">email: sean@sean.com</span><br/>
-             <span class="blogPost">}</span>
-        </p>
+        <pre class="prettyprint">user_info = {<br/>username: sean,<br/>password: 1234,<br/>email: sean@sean.com</pre>
 
         <p>Boom! There it is. And just like Arrays, you can use the .new method to create a Hash as well:</p>
 
-        <p><span class="blogPost">user_info = Hash.new</span></p>
+        <pre class="prettyprint">user_info = Hash.new</pre>
 
         <p>Hashes are also indexed using the block notation.</p>
 
-        <p><span class="blogPost">user_info[username:] = sean</span></p>
+        <pre class="prettyprint">user_info[username:] = sean</pre>
 
         <p>Unlike Arrays however, Hashes store a default value of “nil” when a key is called that doesn’t have a value.</p>
 
-        <p><span class="blogPost">user_info[age:] = nil</span></p>
+        <pre class="prettyprint">user_info[age:] = nil</pre>
 
         <h2 class="blogPost">WHEN TO USE WHAT</h2>
 
@@ -101,6 +94,10 @@
     </ul>
     <h5>Sean Sassenrath - Web Dev 2015</h5>
   </div>
+  <script src="src/prettify.js"></script>
+  <script>
+    prettyPrint();
+  </script>
 </body>
 </html>
 
