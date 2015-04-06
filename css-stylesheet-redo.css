@@ -1,0 +1,39 @@
+/*navigation bar*/
+#navbar-border {
+/*  border-color: #44515F;*/
+  border: 0px;
+}
+#nav-color {
+  background-color: #3B4753;
+  border-color: #44515F;
+  color: white;
+}
+#nav-active {
+  background-color: #556677;
+  background-image: none;
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+#logo {
+  margin: 12px 0px 0px 60px;
+}
+#navbar-right {
+  margin-right: 10px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: white !important;
+}
+.navbar-default .navbar-nav li a:hover {
+  color: blue !important;
+}
+
+/*jumbotron content*/
+.jumbotron {
+  background-image:url('http://goo.gl/04j7Nn');
+  margin-top: -20px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
