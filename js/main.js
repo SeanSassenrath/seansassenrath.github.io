@@ -3,6 +3,13 @@ $(document).ready(function(){
   $('#invalid-request').hide();
   $('#ajax-error').hide();
 
+  $('.contact-scroll').on('click', function(e) {
+    e.preventDefault();
+    $('body, html').animate({
+      scrollTop: $('#contact-section').offset().top
+    })
+  })
+
   $('#contact-submit').on('click', function(e){
     e.preventDefault();
     var name = $('#name').val();
