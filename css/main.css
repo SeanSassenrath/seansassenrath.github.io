@@ -1,0 +1,120 @@
+.bkg-tan { background-color: #EAE5E1; }
+.bkg-white { background-color: white; }
+.bkg-gray { background-color: #333333; }
+.bkg-pink { background-color: pink; }
+
+.border-red {border: 2px solid #FF6666;}
+
+.txt-red {color: #FF6666;}
+.txt-white {color: white;}
+
+.w-auto { width: auto; }
+.w-std { width: 100px; }
+.h-m { height: 500px; }
+.h-s { height: 250px;}
+.h-xs { height: 175px;}
+
+.circle { border-radius: 35px; }
+
+.underline { text-decoration: underline; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.font-oswald { font-family: 'Oswald', sans-serif; }
+
+.pad-m-top { padding-top: 50px;}
+.pad-s-top { padding-top: 25px;}
+.pad-s { padding: 15px; }
+.pad-xs { padding: 5px; }
+.pad-button { padding: 10px 30px;}
+
+.margin-m { margin: 50px 0px; }
+.margin-s { margin: 25px 0px; }
+.margin-xs { margin: 12px; }
+.margin-xl-bottom { margin-bottom: 30%;}
+.margin-l-bottom { margin-bottom: 100px;}
+.margin-m-bottom { margin-bottom: 50px;}
+.margin-l-top { margin: 100px auto 0px;}
+.margin-m-top { margin: 50px auto 0px; }
+.margin-s-top { margin-top: 25px; }
+.margin-auto { margin: 0px auto; }
+.margin-zero { margin: 0px;}
+
+.display-b { display: block; }
+
+.border-std { border: 2px solid gray;}
+.border-bottom { border-bottom: 2px solid gray !important; }
+.border-zero { border: 0px; }
+.border-top-zero { border-top: 0px !important; }
+.border-right-zero { border-right: 0px !important; }
+.border-left-zero { border-left: 0px !important; }
+.box-shadow-zero { box-shadow: inset 0 0px !important; }
+
+.transparent { opacity: .0; }
+
+.fa-bars { color: white; }
+.fa-github { color: white; }
+.fa-linkedin-square { color: white; }
+.fa-twitter { color: white; }
+.fa-envelope { color: white; }
+
+.cursor { cursor: pointer; }
+
+a { color: #66CDAA;}
+a:hover { color: #478F76;}
+
+.submit:hover { background-color: #D5DBD9; }
+
+/*.text-style {
+  width: 50%;
+  display: inline-block;
+  float: right;
+  margin-right: 10%;
+  margin-top: 6%;
+}*/
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-1;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:-1;
+
+  -moz-animation:move-twink-back 500s linear infinite;
+  -ms-animation:move-twink-back 500s linear infinite;
+  -o-animation:move-twink-back 500s linear infinite;
+  -webkit-animation:move-twink-back 500s linear infinite;
+  animation:move-twink-back 500s linear infinite;
+}
