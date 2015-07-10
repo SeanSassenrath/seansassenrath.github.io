@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $('title').text('Sean Sassenrath');
+
   $('#invalid-request').hide();
   $('#ajax-error').hide();
 
