@@ -3,7 +3,7 @@
 .bkg-gray { background-color: #333333; }
 .bkg-pink { background-color: pink; }
 
-.border-red {border: 2px solid #FF6666;}
+.debug {border: 2px solid #FF6666;}
 
 .txt-red {color: #FF6666;}
 .txt-white {color: white;}
@@ -25,8 +25,10 @@
 .font-oswald { font-family: 'Oswald', sans-serif; }
 .font-open-sans { font-family: 'Open Sans', sans-serif; }
 
-.pad-m-top { padding-top: 50px;}
+.pt1 { padding-top: 1em;}
+.pt-50 { padding-top: 50px;}
 .pad-s-top { padding-top: 25px;}
+.pb1 { padding-bottom: 1em;}
 .pad-s { padding: 15px; }
 .pad-xs { padding: 5px; }
 .pad-button { padding: 10px 30px;}
