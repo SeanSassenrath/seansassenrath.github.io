@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-  // ga('create', 'UA-70442356-1');
-  ga('require', 'linkid');
-  // ga('send', 'pageview');
-
   $('title').text('Sean Sassenrath');
 
   $('#invalid-request').hide();
