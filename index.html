@@ -23,6 +23,8 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WHBTK3');</script>
     <!-- End Google Tag Manager -->
+
+
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
         <div class="stars"></div>
@@ -30,7 +32,7 @@
         <div class="h-m">
           <!-- <nav class="tab-bar"> -->
             <section class="left-small border-zero">
-              <a class="left-off-canvas-toggle" href="#"><i class="fa fa-bars fa-2x margin-xs"></i></a>
+              <a class="left-off-canvas-toggle" href="#" id="toggle-bar"><i class="fa fa-bars fa-2x margin-xs"></i></a>
             </section>
 
           <!-- </nav> -->
@@ -38,11 +40,11 @@
           <aside class="left-off-canvas-menu">
             <ul class="off-canvas-list">
               <li><label>Sean Sassenrath</label></li>
-              <li><a href="https://github.com/SeanSassenrath">github</a></li>
-              <li><a href="https://www.linkedin.com/in/seansassenrath">linkedin</a></li>
-              <li><a href="https://twitter.com/SeanSassenrath">twitter</a></li>
-              <li><a href="https://seansassenrath.github.io/blog">blog</a></li>
-              <li><a href="" class="contact-scroll">contact</a></li>
+              <li><a href="https://github.com/SeanSassenrath" id="github">github</a></li>
+              <li><a href="https://www.linkedin.com/in/seansassenrath" id="linked-in">linkedin</a></li>
+              <li><a href="https://twitter.com/SeanSassenrath" id="twitter">twitter</a></li>
+              <li><a href="https://seansassenrath.github.io/blog" id="blog">blog</a></li>
+              <li><a href="" class="contact-scroll" id="contact">contact</a></li>
             </ul>
           </aside>
 
@@ -51,9 +53,9 @@
             <h2 class="text-center txt-white">Sean Sassenrath</h2>
             <h4 class="text-center txt-white">Full Stack Web Developer</h4>
             <div class="text-center">
-              <a href="https://github.com/SeanSassenrath"><i class="fa fa-github fa-lg margin-xs cursor"></i></a>
-              <a href="https://www.linkedin.com/in/seansassenrath"><i class="fa fa-linkedin-square fa-lg margin-xs cursor"></i></a>
-              <a href="https://twitter.com/SeanSassenrath"><i class="fa fa-twitter fa-lg margin-xs cursor"></i></a>
+              <a href="https://github.com/SeanSassenrath" id="github-profile"><i class="fa fa-github fa-lg margin-xs cursor"></i></a>
+              <a href="https://www.linkedin.com/in/seansassenrath" id="linked-in-profile"><i class="fa fa-linkedin-square fa-lg margin-xs cursor"></i></a>
+              <a href="https://twitter.com/SeanSassenrath" id="twitter-profile"><i class="fa fa-twitter fa-lg margin-xs cursor"></i></a>
               <i class="fa fa-envelope fa-lg margin-xs cursor contact-scroll"></i>
             </div>
           </div>
@@ -82,11 +84,11 @@
               <h3 class="underline font-oswald">Projects</h3>
               <div class="row">
                 <div class="small-12 small-centered columns pb1">
-                  <h4><a href="http://mobt.me/BlJo">Halle</a></h4>
+                  <h4><a href="http://mobt.me/BlJo" id="halle-app">Halle</a></h4>
                   <p>Halle is an Android &amp; iOS app designed to crowd-source information on parking spaces for drivers in urban areas. The application is built using Ruby on Rails API, JavaScript and jQuery. Mobile integration was done using PhoneGap and jQuery Mobile. Other technologies include Google Maps API, Firebase and Facebook OAuth.
                   </p>
-                  <p>To see Halle in an emulator - <a href="http://mobt.me/BlJo">click here</a></p>
-                  <p><a href="https://github.com/coderica/halleAPI">Backend Repo</a> / <a href="https://github.com/whitfieldc/halle">Frontend Repo</a></p>
+                  <p>To see Halle in an emulator - <a href="http://mobt.me/BlJo" id="halle-emulator">click here</a></p>
+                  <p><a href="https://github.com/coderica/halleAPI" id="halle-backend-repo">Backend Repo</a> / <a href="https://github.com/whitfieldc/halle" id="halle-frontend-repo">Frontend Repo</a></p>
                   <img class="pb1" src="img/banner.png">
                   <ul class="small-block-grid-2 margin-zero">
                     <li><img class="pad-xs" src="img/halle-phone-1.png"></li>
@@ -96,11 +98,11 @@
               </div>
               <div class="row">
                 <div class="small-12 small-centered columns pb1 pt1">
-                  <h4><a href="http://seansassenrath.github.io/macys_guess">Macy's Guess</a></h4>
+                  <h4><a href="http://seansassenrath.github.io/macys_guess" id="macys-app">Macy's Guess</a></h4>
                   <p>Macy's Guess is a game in which a user can try and guess within +/- 20% of an items price. The item's used are all pulled from the ShopStyle api and have been filtered specifically for Macy's merchandise for both men and women. It's built in Foundation 5 for responsive design as well as jQuery for single page app functionality.
                   </p>
                   <p>To see Macy's Guess in action - <a href="http://seansassenrath.github.com/macys_guess">click here</a></p>
-                  <p><a href="https://github.com/seansassenrath/macys_guess">Repo</a></p>
+                  <p><a href="https://github.com/seansassenrath/macys_guess" id="macys-repo">Repo</a></p>
                   <img class="pb1" src="img/macys-guess1.png">
                   <ul class="small-block-grid-2 margin-zero">
                     <li><img class="pad-xs" src="img/macys-guess2.png"></li>
@@ -110,11 +112,11 @@
               </div>
               <div class="row">
                 <div class="small-12 small-centered columns pt1 pb1">
-                  <h4><a href="http://mobt.me/BlJo">Easy Weather</a></h4>
+                  <h4><a href="http://seansassenrath.github.io/easy-weather" id="easy-weather-app">Easy Weather</a></h4>
                   <p>Easy Weather is an application that provides a user with their current weather based on their geolocation, as well as other areas based on zipcode input. The app pulls from the Open Weather API and it's responsive design is built in Foundation 5.
                   </p>
                   <p>To see Easy Weather in action - <a href="http://seansassenrath.github.io/easy-weather">click here</a></p>
-                  <p><a href="https://github.com/seansassenrath/easy-weather">Repo</a></p>
+                  <p><a href="https://github.com/seansassenrath/easy-weather" id="easy-weather-repo">Repo</a></p>
                   <img class="pad-xs" src="img/easy-weather1.png">
                   <ul class="small-block-grid-2 margin-zero">
                     <li><img class="pad-xs" src="img/easy-weather2.png"></li>
@@ -131,7 +133,7 @@
                   <h3 class="underline font-oswald">Background</h3>
                   <h6>Skills: Full Stack Web Development / Marketing</h6>
                   <h6>Hobbies: Coding / Fitness / Wine</h6>
-                  <p>to view resume, click <a href="https://docs.google.com/document/d/1w-q382Km9B4ElRZdRnvgL_k4E2rhpzOM3Us2qnc1YD0/pub">here</a></p>
+                  <p>to view resume, click <a href="https://docs.google.com/document/d/1w-q382Km9B4ElRZdRnvgL_k4E2rhpzOM3Us2qnc1YD0/pub" id="resume">here</a></p>
                 </div>
                 <div class="small-12 medium-6 margin-l-bottom columns">
                   <h3 class="underline font-oswald" id="contact-section">Contact</h3>
