@@ -1,0 +1,59 @@
+h1, h2, p {
+  font-family: 'Arimo', sans-serif;
+}
+
+.sec {
+  padding: 40px 20px;
+}
+
+.sec.sec--mode--primary {
+  background-color: #fafafa;
+}
+
+.sec-content-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.hero-content-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-content-container header {
+  margin-top: 20px;
+}
+
+.portrait {
+  max-width: 250px;
+  border-radius: 5%;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .hero-content-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-content-container header {
+    margin-left: 40px;
+    margin-top: 0;
+  }
+
+  .portrait {
+    max-width: 300px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+}
