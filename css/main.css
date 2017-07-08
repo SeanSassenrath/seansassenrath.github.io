@@ -1,59 +1,146 @@
+body {
+  background-color: #f6f9fc;
+  margin: 0;
+}
+
 h1, h2, p {
   font-family: 'Arimo', sans-serif;
 }
 
+p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .sec {
   padding: 40px 20px;
+  animation: fadein 2s, fadeup 2s;
 }
 
-.sec.sec--mode--primary {
-  background-color: #fafafa;
-}
-
-.sec-content-container {
+.sec-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 960px;
 }
 
-.hero-content-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.sec-content h2, p {
+  color: #47525d;
+}
+
+.sec-header-centered {
   text-align: center;
 }
 
-.hero-content-container header {
+.text-container {
+  max-width: 540px;
+}
+
+.hero-container {
+  text-align: center;
+}
+
+.hero-container .text-container {
   margin-top: 20px;
 }
 
 .portrait {
   max-width: 250px;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 .title {
+  color: #47525d;
   font-size: 35px;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
 }
 
+.title.title--size--small {
+  font-size: 30px;
+}
+
+.occupation-location-container {
+  align-items: center;
+  display: flex;
+}
+
+.occupation-location-container h2 {
+  padding-left: 10px;
+}
+
+.msft-logo {
+  height: 30px;
+  animation: throb 6s infinite;
+  animation-delay: 2s;
+}
+
+.msft-logo:hover {
+  animation: roll 2s;
+}
+
+/* Animations */
+
+@keyframes throb {
+  30%, 40% { transform: scale(1); }
+  40%, 50% { transform: scale(1.2); }
+  50%, 60% { transform: scale(1); }
+}
+
+@keyframes roll {
+  from { transform: rotate(0deg) translate(0); }
+  to { transform: rotate(-360deg) translate(0); }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeup {
+  from { transform: translateY(30px); }
+  to { transform: translateY(0px); }
+}
+
+/* Media queries */
+
 @media (min-width: 700px) {
-  .hero-content-container {
+
+  .sec {
+    padding: 90px 20px;
+  }
+
+  .sec-content {
     flex-direction: row;
+    justify-content: space-between;
     text-align: left;
   }
 
-  .hero-content-container header {
+  .sec-content.sec-content--mode--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .hero-container .text-container {
     margin-left: 40px;
-    margin-top: 0;
+    margin-top: 50px;
   }
 
   .portrait {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .title {
-    font-size: 45px;
+    font-size: 50px;
   }
 }
