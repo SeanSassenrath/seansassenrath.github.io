@@ -1,47 +1,40 @@
-$(document).ready(function(){
 
-  $('title').text('Sean Sassenrath');
+(function() {
+  var contentImgs = document.getElementsByClassName("content-imgs");
+  var currentIndex = 0;
+  var imgLimit = 1; // Limit of 3 images, zero indexed
+  var imgSelector = contentImgs[0].children;
+  var noop = function() {};
 
-  $('#invalid-request').hide();
-  $('#ajax-error').hide();
+  function hideImg(imgNode) {
+    imgNode.classList.remove("content-animated-img--display-active");
+    imgNode.classList.add("content-animated-img--display-hidden");
+  }
 
-  $('.contact-scroll').on('click', function(e) {
-    e.preventDefault();
-    $('body, html').animate({
-      scrollTop: $('#contact-section').offset().top
-    })
-  })
+  function activateImg(imgNode) {
+    imgNode.classList.remove("content-animated-img--display-hidden");
+    imgNode.classList.add("content-animated-img--display-active");
+  }
 
-  $('#contact-submit').on('click', function(e){
-    e.preventDefault();
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var subject = $('#subject').val();
-    var message = $('#message').val();
+  function nextImg() {
+    hideImg(imgSelector[currentIndex]);
+    setTimeout(noop, 1000);
+    currentIndex++;
+    activateImg(imgSelector[currentIndex]);
+  }
 
-    if (name.length > 0 && email.length > 0) {
-      $.ajax({
-        url: 'http://getsimpleform.com/messages/ajax?form_api_token=11545f80afa85c2500d908afd880b345',
-        type: 'POST',
-        dataType: 'jsonp',
-        data: {name: name, email: email, subject: subject, message: message}
-      }).done(function() {
-        $('#name').hide();
-        $('#email').hide();
-        $('#subject').hide();
-        $('#message').hide();
-        $('#invalid-request').hide();
-        $('#ajax-error').hide();
-        $('#contact-submit').val('Thanks for your message!');
-        $('#contact-submit').css("color", "#66CDAA");
-        $('#contact-submit').css("border-color", "#66CDAA");
-        $('form')[0].reset();
-      }).fail(function(){
-        $('#ajax-error').show();
-      })
+  function nextImgReset() {
+    hideImg(imgSelector[currentIndex]);
+    setTimeout(noop, 1000);
+    currentIndex = 0;
+    activateImg(imgSelector[currentIndex]);
+  }
+
+  setInterval(function() {
+    if (currentIndex >= (imgLimit - 1) && currentIndex !== 0) {
+      nextImgReset();
     } else {
-      $('#invalid-request').show();
-    };
-
-  });
-});
+      nextImg();
+    }
+  }, 6000);
+})();
