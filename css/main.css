@@ -79,7 +79,7 @@ li {
   position: absolute;
   width: 350px;
   height: 250px;
-  animation: fadeinout 6s infinite;
+  animation: fadeinout 7s infinite;
 }
 
 .content-animated-img--display-hidden {
