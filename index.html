@@ -48,34 +48,67 @@
           <div class="bottom-bar">
             <div>
               <ul class="link-list">
-                <li><span class="link">Blog</span></li>
-                <li><span class="link">Link 2</span></li>
-                <li><span class="link">Link 3</span></li>
+                <li class="link-container">
+                  <a href="#technologies">
+                    <span class="link">Technologies</span>
+                  </a>
+                </li>
+                <li class="link-container">
+                  <a href="#design">
+                    <span class="link">Design</span>
+                  </a>
+                </li>
+                <li class="link-container">
+                  <a href="#resources">
+                    <span class="link">Resources</span>
+                  </a>
+                </li>
+                <li class="link-container">
+                  <a href="#contact">
+                    <span class="link">Contact</span>
+                  </a>
+                </li>
               </ul>
             </div>
-            <div>
-              <a href="https://github.com/SeanSassenrath"><img src="img/github-icon.png" alt="GitHub" class="icon"/></a>
-              <a href="https://twitter.com/SeanSassenrath"><img src="img/twitter-icon.png" alt="Twitter" class="icon"/></a>
-              <a href="https://www.linkedin.com/in/seansassenrath/"><img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"/></a>
+            <div class="social-list">
+              <a href="https://github.com/SeanSassenrath" class="icon-container">
+                <i class="fa fa-github fa-2x copy--color-light" aria-hidden="true"></i>
+                <!--<img src="img/github-icon.png" alt="GitHub" class="icon"/>-->
+              </a>
+              <a href="https://twitter.com/SeanSassenrath" class="icon-container">
+                <i class="fa fa-twitter fa-2x copy--color-light" aria-hidden="true"></i>
+                <!--<img src="img/twitter-icon.png" alt="Twitter" class="icon"/>-->
+              </a>
+              <a href="https://www.linkedin.com/in/seansassenrath/" class="icon-container">
+                <i class="fa fa-linkedin fa-2x copy--color-light" aria-hidden="true"></i>
+                <!--<img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"/>-->
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="content-container">
+      <div class="employer-banner">
+        <p class="days-at-employer">359 days @ Microsoft</p>
+      </div>
+
+      <section id="technologies" class="content-container">
         <div class="text-img">
           <div class="text-container">
-            <h1 id="technologies" class="title title--size-small">Technologies</h1>
+            <h1 class="title title--size-small">Technologies</h1>
             <p>
               I like to dabble with various tech, but my focus is primarly on application <strong>development</strong> (Typescript, 
               React, Redux, CSSModules), <strong>integration</strong> (TeamCity, VSTS, TravisCI), and <strong>deployment</strong> (Docker, AWS, Azure).
             </p>
           </div>
           <div>
-            <img src="img/react-logo.png" alt="React Logo" class="img-tile">
+            <img src="img/react-logo.png" alt="React Logo" class="img-tile desktop-tile">
           </div>
         </div>
         <div class="imgs-container">
+          <div>
+            <img src="img/react-logo.png" alt="React Logo" class="img-tile mobile-tile">
+          </div>
           <div>
             <img src="img/docker-logo.png" alt="Docker Logo" class="img-tile">
           </div>
@@ -85,10 +118,10 @@
         </div>
       </section>
 
-      <section class="content-container">
+      <section id="design" class="content-container">
         <div class="text-img text-img-reverse">
           <div class="text-container">
-            <h1 id="design" class="title title--size-small">Design</h1>
+            <h1 class="title title--size-small">Design</h1>
             <p>
               I'm a huge design enthusiast! I've been incredibly fortunate to work with world class designers at both 
               Xamarin and Microsoft. More recently, I've become more involved in accessibility focused design. 
@@ -97,10 +130,13 @@
             </p>
           </div>
           <div>
-            <img src="img/sketch-logo.png" alt="Sketch Logo" class="img-tile">
+            <img src="img/sketch-logo.png" alt="Sketch Logo" class="img-tile desktop-tile">
           </div>
         </div>
         <div class="imgs-container imgs-container-reverse">
+          <div>
+            <img src="img/sketch-logo.png" alt="Sketch Logo" class="img-tile mobile-tile">
+          </div>
           <div>
             <img src="img/figma-logo.png" alt="Figma Logo" class="img-tile">
           </div>
@@ -110,128 +146,46 @@
         </div>
       </section>
 
-      <section class="resource-container content-container">
-        <div class="resource-text">
-          <h1 id="resources" class="title title--size-small">Resources</h1>
-          <p>There are so many amazing developer resources out there. Here are my current favorites:</p>
+      <section id="resources" class="resource-container content-container">
+        <div class="resource-header">
+          <h1 class="title title--size-small">Resources</h1>
+          <p>There are so many amazing developer resources out there. Here are my current&nbsp;favorites:</p>
         </div>
-        <div class="resource-imgs">
-          <div>
-            <p><a href="https://egghead.io/">Egghead.io</a></p>
+        <div class="resource-list">
+          <div class="resource">
+            <a href="https://egghead.io/"><p>Egghead.io</p></a>
             <a href="https://egghead.io/"><img src="img/egghead-screenshot.png" alt="Egghead.io Screenshot" class="resource-img"></a>
           </div>
-          <div>
-            <p><a href="https://frontendmasters.com/">Frontend Masters</a></p>
+          <div class="resource">
+            <a href="https://frontendmasters.com/"><p>Frontend Masters</p></a>
             <a href="https://frontendmasters.com/"><img src="img/frontendmasters-screenshot.png" alt="Frontend Masters Screenshot" class="resource-img"></a>
           </div>
-          <div>
-            <p><a href="https://wdrl.info/">WDRL (please donate if you can!)</a></p>
+          <div class="resource">
+            <a href="https://wdrl.info/"><p>WDRL (please donate!)<p></a>
             <a href="https://wdrl.info/"><img src="img/wdrl-screenshot.png" alt="WDRL Screenshot" class="resource-img"></a>
           </div>
         </div>
       </section>
 
-      <footer>
-        <div class="content-container light-text">
-          <h1 id="contact" class="title title--color-light title--size-small">Contact</h1>
-          <p class="copy--color-light">Working on a fun project, need some help, or just want to say hi? Drop me a line!</p>
-        </div>
-      </footer>
-
-      <!--<section class="sec hero-sec">
-        <div class="content content--row hero-container">
+      <section id="contact">
+        <div class="content-container">
           <div>
-            <img src="img/sean-portrait-color.png" class="portrait" alt="Profile picture of Sean Sassenrath">
+            <h1 class="title title--color-light title--size-small">Contact</h1>
+            <p class="copy--color-light">Working on a fun project? Need help? Just want to say hi?</p>
           </div>
-          <div class="text-container">
-            <h1 class="title title--size-large">Sean Sassenrath</h1>
-            <div class="occupation-location-container">
-              <a href="https://mobile.azure.com"><img src="img/microsoft-logo.png" alt="Microsoft Logo" class="msft-logo" /></a>
-              <h2>Software Engineer &ndash; San&nbsp;Francisco,&nbsp;CA</h2>
-            </div>
-            <p>
-              Driven software engineer who has the desire to exceed expectations. Experience working with teams and shipping 
-              production code. Knowledgeable in modern Javascript frameworks, accessibility standards, design implementation,
-              and web app infrastructure. Continuously learning and exploring new technologies.
-            </p>
-          </div>
-        </div>
-      </section>-->
-
-      <!--<section class="content">
-        <div class="content content--row">
-          <div class="text-container">
-            <h1 id="technologies" class="title title--size-small">Technologies</h1>
-            <p>
-              I like to dabble with various tech, but my focus is primarly on application <strong>development</strong> (Typescript, 
-              React, Redux, CSSModules), <strong>integration</strong> (TeamCity, VSTS, TravisCI), and <strong>deployment</strong> (Docker, AWS, Azure).
-            </p>
-          </div>
-          <div class="content-imgs">
-            <img src="img/react-logo.png" alt="React Logo" class="">
-            <img src="img/typescript-logo.png" alt="TypeScript Logo" class="content-animated-img content-animated-img--display-hidden">
-            <img src="img/docker-logo.png" alt="Docker Logo" class="content-animated-img content-animated-img--display-hidden">
+          <div class="contact-icons">
+            <a href="mailto:sean.sassenrath@gmail.com">
+              <i class="fa fa-envelope-o fa-2x copy--color-light icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/SeanSassenrath">
+              <i class="fa fa-twitter fa-2x copy--color-light icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/seansassenrath/">
+              <i class="fa fa-linkedin fa-2x copy--color-light icon" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </section>
-
-      <section class="sec">
-        <div class="content content--row-reverse">
-          <div class="text-container">
-            <h1 id="design" class="title title--size-small">Design</h1>
-            <p>
-              I'm a huge design enthus  iast! I've been incredibly fortunate to work with world class designers at both 
-              Xamarin and Microsoft. More recently, I've become more involved in accessibility focused design. 
-              Some of my favorite tools include <a href="https://www.sketchapp.com/">Sketch</a>, 
-              <a href="https://www.invisionapp.com/">Invision</a>, and <a href="https://www.figma.com/">Figma</a>.
-            </p>
-          </div>
-          <div class="content-imgs">
-            <img src="img/sketch-logo.png" alt="Sketch Logo" class="content-animated-img content-animated-img--display-active">
-            <img src="img/invision-logo.png" alt="Invision Logo" class="content-animated-img content-animated-img--display-hidden">
-            <img src="img/figma-logo.png" alt="Figma Logo" class="content-animated-img content-animated-img--display-hidden">
-          </div>
-        </div>
-      </section>
-
-      <section class="sec">
-        <div class="content content--row">
-          <div class="text-container">
-            <h1 id="resources" class="title title--size-small">Resources</h1>
-            <p>There are so many amazing developer resources out there. Here are my current favorites:</p>
-            <ul>
-              <li><p><a href="https://wdrl.info/">Web Development Reading List (please donate if you can!)</a></p></li>
-              <li><p><a href="https://egghead.io/">Egghead.io</a></p></li>
-              <li><p><a href="https://frontendmasters.com/">Frontend Masters</a></p></li>
-              <li><p><a href="https://basarat.gitbooks.io/typescript/">Basarat's TypeScript Deep Dive</a></p></li>
-            </ul>
-          </div>
-          <div class="content-imgs">
-            <img src="img/egghead-screenshot.png" alt="Egghead.io Screenshot" class="content-animated-img content-animated-img--display-active">
-            <img src="img/frontendmasters-screenshot.png" alt="Frontend Masters Screenshot" class="content-animated-img content-animated-img--display-hidden">
-            <img src="img/wdrl-screenshot.png" alt="WDRL Screenshot" class="content-animated-img content-animated-img--display-hidden">
-          </div>
-        </div>
-      </section>
-
-      <section class="sec">
-        <div class="content content--row-reverse">
-          <div class="text-container">
-            <h1 id="contact" class="title title--size-small">Contact</h1>
-            <p>Working on a fun project, need some help, or just want to say hi? Drop me a line!</p>
-            <ul>
-              <li><p><a href="https://twitter.com/SeanSassenrath">Twitter</a></p></li>
-              <li><p><a href="https://www.linkedin.com/in/seansassenrath">LinkedIn</p></li>
-              <li><p><a href="mailto:sean.sassenrath@gmail.com">Email</p></li>
-            </ul>
-          </div>
-          <div class="content-imgs">
-            <img src="img/twitter-logo.png" alt="Twitter Logo" class="content-animated-img content-animated-img--display-active">
-            <img src="img/linkedin-logo.png" alt="LinkedIn Logo" class="content-animated-img content-animated-img--display-hidden">
-            <img src="img/fallout-boy.png" alt="Thumbs up" class="content-animated-img content-animated-img--display-hidden">
-          </div>
-        </div>
-      </section>-->
     </div>
 
     <script src="js/main.js"></script>
