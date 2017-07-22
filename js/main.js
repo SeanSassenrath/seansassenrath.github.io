@@ -1,9 +1,13 @@
 
-(function() {
+(function(document) {
 
   var animated = true;
+  document.getElementById('animation').addEventListener('click', function() {
+    animated = false;
+    console.log('animated', animated)
+  })
 
-  if (animated) {
+  if (!!animated) {
     // Fade images in and out
     var imgContainers = Array.from(document.getElementsByClassName("content-imgs"));
 
@@ -49,4 +53,4 @@
     };
   }
 
-})();
+})(document);
