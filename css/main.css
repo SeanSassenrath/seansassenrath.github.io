@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, p, span, button {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 p, span {
@@ -20,6 +20,66 @@ ul {
 li {
   list-style: none;
 }
+
+/* Hero */
+
+.hero {
+  background-color: #061524;
+}
+.hero-content-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.profile {
+  padding: 120px 0;
+}
+.portrait {
+  box-shadow: 0px 0px 100px rgba(255, 255, 255, .4);
+}
+.hero h1, h2 {
+  color: #ece9e8;
+  text-align: center;
+}
+.name {
+  font-size: 40px;
+  margin: 15px 0 0 0;
+}
+.quote {
+  font-size: 24px;
+  margin: 0;
+  opacity: .8;
+  font-weight: 400;
+}
+.bottom-bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.link-list {
+  display: flex;
+  justify-content: space-between;
+  color: #ece9e8;
+  opacity: .8;
+}
+.link-list li{
+  margin-right: 25px;
+}
+.bottom-bar img {
+  margin-left: 15px;
+  width: 25px;
+}
+
+
+
+
+
+
+
 
 #preferences {
   border: 1px solid red;
@@ -79,10 +139,7 @@ li {
   margin-top: 20px;
 }
 
-.portrait {
-  border-radius: 2%;
-  box-shadow: 0px 5px 0px rgba(0,0,0,.1);
-}
+
 
 .title {
   color: #47525d;
@@ -194,7 +251,10 @@ li {
   }
 
   .portrait {
-    max-width: 280px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    max-width: 180px;
   }
 
   .title--size-large {
