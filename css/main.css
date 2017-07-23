@@ -1,3 +1,9 @@
+:root {
+  --color-offwhite: #ece9e8;
+  --color-offwhite-dark1: #a7a9ad;
+  --color-gray-light1: #c2c2c2;
+}
+
 body {
   background-color: #f6f9fc;
   margin: 0;
@@ -5,7 +11,7 @@ body {
 h1, h2, p, span {
   font-family: 'Nunito Sans', sans-serif;
 }
-p, span {
+p {
   font-size: 18px;
   line-height: 25px;
   margin: 10px 0;
@@ -36,7 +42,7 @@ a {
   text-transform: uppercase;
 }
 .title--color-light {
-  color: #ece9e8;
+  color: var(--color-offwhite, #ece9e8);
 }
 .title--size-large {
   font-size: 35px;
@@ -45,8 +51,7 @@ a {
   font-size: 30px;
 }
 .copy--color-light {
-  color: #ece9e8;
-  opacity: .7;
+  color: var(--color-offwhite-dark1, #a7a9ad);
   line-height: 20px;
 }
 
@@ -64,13 +69,33 @@ div.hero-container {
   align-items: center;
   justify-content: space-between;
 }
-.msft-logo {
+.current-project-container {
+  display: flex;
+  align-items: center;
+}
+#current-project-link {
+  padding: 10px;
+  margin: -10px 20px -10px -10px;
+}
+#current-project-link:hover .employer-logo {
+  animation: roll 2s;
+}
+.employer-logo {
   height: 30px;
   animation: throb 6s infinite;
   animation-delay: 2s;
 }
-.msft-logo:hover {
-  animation: roll 2s;
+.prompt {
+  color: var(--color-offwhite-dark1, #a7a9ad);
+}
+.prompt-display--hidden {
+  animation: prompt-fadeleft 1s, fadeout 1s;
+  opacity: 0;
+}
+.prompt-display--active {
+  display: block;
+  opacity: 1;
+  animation: prompt-faderight 1s, fadein 1s;
 }
 
 .profile {
@@ -86,15 +111,14 @@ div.hero-container {
 .name {
   font-size: 40px;
   margin: 15px 0 0 0;
-  color: #ece9e8;
+  color: var(--color-offwhite, #ece9e8);
   text-align: center;
 }
 .quote {
   font-size: 24px;
   margin: 0;
-  opacity: .8;
   font-weight: 400;
-  color: #ece9e8;
+  color: var(--color-offwhite-dark1, #a7a9ad);
   text-align: center;
 }
 
@@ -110,17 +134,17 @@ div.hero-container {
   margin-right: 25px;
 }
 .bottom-bar .link-list .link-container .link {
-  color: #ece9e8;
-  opacity: .7;
+  color: var(--color-offwhite-dark1, #a7a9ad);
   line-height: 20px;
 }
 .bottom-bar .social-list {
   display: flex;
 }
 .bottom-bar .social-list .icon-container {
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 12px;
   line-height: 20px;
+  padding: 10px;
 }
 .bottom-bar .social-list .icon-container .icon {
   width: 25px;
@@ -135,17 +159,18 @@ div.hero-container {
   background: linear-gradient(to right, #F1511B, #80CC28, #00ADEF, #FBBC09);
 }
 .days-at-employer {
+  animation: fadein 2s, fadeup 2s;
   margin: 0;
   font-weight: 600;
   font-size: 14px;
-  color: white;
+  color: var(--color-offwhite, #ece9e8);
 }
 
 /* Main content */
 
 .img-tile {
   width: 110px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--color-gray-light1, #c2c2c2);
   border-radius: 3px;
   padding: 20px 0;
   box-shadow: 0px 0px 18px rgba(1, 1, 1, .4);
@@ -164,7 +189,7 @@ div.hero-container {
   align-self: center;
 }
 .text-img .img-tile {
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--color-gray-light1, #c2c2c2);
   padding: 20px 0;
 }
 .text-img-reverse {
@@ -208,8 +233,11 @@ div.hero-container {
   max-width: 280px;
   margin: 0 10px 25px 10px;
 }
+.resource a {
+  display: block;
+}
 .resource-img {
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--color-gray-light1, #c2c2c2);
   border-radius: 3px;
   box-shadow: 0px 0px 18px rgba(1, 1, 1, .4);
   padding: 5px;
@@ -226,8 +254,12 @@ div.hero-container {
 .contact-icons {
   margin-top: 30px;
 }
-.contact-icons .icon {
+.contact-icons a {
+  display: inline-block;
   margin: 0 10px;
+}
+.contact-icons .icon {
+  padding: 7px;
 }
 
 
@@ -250,9 +282,24 @@ div.hero-container {
   to { opacity: 1; }
 }
 
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 @keyframes fadeup {
   from { transform: translateY(30px); }
   to { transform: translateY(0px); }
+}
+
+@keyframes prompt-faderight {
+  from { transform: translateX(-20px); }
+  to { transform: translateX(0px); }
+}
+
+@keyframes prompt-fadeleft {
+  from { transform: translateX(0px); }
+  to { transform: translateX(-20px); }
 }
 
 /* Media queries */
@@ -295,7 +342,6 @@ div.hero-container {
     justify-content: space-between;
   }
   .text-img .img-tile {
-    border: 1px solid #c2c2c2;
     padding: 20px 0;
     margin-left: 40px;
   }
@@ -321,18 +367,12 @@ div.hero-container {
 
   .resource-list {
     align-items: baseline;
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 50px;
-    text-align: center;
-    font-weight: 600;
   }
   .resource-img {
-    border: 1px solid #c2c2c2;
-    border-radius: 3px;
     margin: 0 5px;
-    box-shadow: 0px 0px 18px rgba(1, 1, 1, .4);
   }
 }

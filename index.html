@@ -29,11 +29,14 @@
       <section class="hero">
         <div class="hero-container content-container">
           <div class="top-bar">
-            <div>
-              <a href="https://mobile.azure.com"><img src="img/microsoft-logo.png" alt="Microsoft Logo" class="msft-logo" /></a>
+            <div class="current-project-container">
+              <a id="current-project-link" href="https://mobile.azure.com">
+                <img src="img/microsoft-logo.png" alt="Microsoft Logo" class="employer-logo" />
+              </a>
+              <p id="current-project-prompt" class="prompt-display--hidden">See what I'm working on!</p>
             </div>
             <div>
-              <p>San Francisco, CA</p>
+              <p>Oakland, CA</p>
             </div>
           </div>
           <div class="profile">
@@ -42,7 +45,7 @@
             </div>
             <header>
               <h1 class="name">Sean Sassenrath</h1>
-              <h2 class="quote">Write code. Love life.</h2>
+              <h2 class="quote">Writing code and loving life.</h2>
             </header>
           </div>
           <div class="bottom-bar">
@@ -73,15 +76,12 @@
             <div class="social-list">
               <a href="https://github.com/SeanSassenrath" class="icon-container">
                 <i class="fa fa-github fa-2x copy--color-light" aria-hidden="true"></i>
-                <!--<img src="img/github-icon.png" alt="GitHub" class="icon"/>-->
               </a>
               <a href="https://twitter.com/SeanSassenrath" class="icon-container">
                 <i class="fa fa-twitter fa-2x copy--color-light" aria-hidden="true"></i>
-                <!--<img src="img/twitter-icon.png" alt="Twitter" class="icon"/>-->
               </a>
               <a href="https://www.linkedin.com/in/seansassenrath/" class="icon-container">
                 <i class="fa fa-linkedin fa-2x copy--color-light" aria-hidden="true"></i>
-                <!--<img src="img/linkedin-icon.png" alt="LinkedIn" class="icon"/>-->
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@
       </section>
 
       <div class="employer-banner">
-        <p class="days-at-employer">359 days @ Microsoft</p>
+        <p class="days-at-employer"><span id="days"></span> days @ Microsoft</p>
       </div>
 
       <section id="technologies" class="content-container">
