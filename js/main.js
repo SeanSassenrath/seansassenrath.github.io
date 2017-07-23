@@ -1,56 +1,20 @@
 
-(function(document) {
+(function() {
 
-  var animated = true;
-  document.getElementById('animation').addEventListener('click', function() {
-    animated = false;
-    console.log('animated', animated)
+  const today = new Date();
+  const dates = { msftStartDate: new Date(2016, 6, [1]) }
+
+  const daysWorkedBanner = Math.floor((today - dates.msftStartDate) / (1000 * 60 * 60 * 24));
+  document.getElementById('days').innerHTML = daysWorkedBanner;
+
+  const currentProjectLink = document.getElementById('current-project-link');
+  const currentProjectPrompt = document.getElementById('current-project-prompt');
+
+  currentProjectLink.addEventListener('mouseover', function(e) {
+    currentProjectPrompt.className = 'prompt-display--active prompt'
+  })
+  currentProjectLink.addEventListener('mouseout', function(e) {
+    currentProjectPrompt.className = 'prompt-display--hidden prompt'
   })
 
-  if (!!animated) {
-    // Fade images in and out
-    var imgContainers = Array.from(document.getElementsByClassName("content-imgs"));
-
-    imgContainers.forEach(function(container) {
-      imgFadeinFadeOut(container);
-    })
-
-    function imgFadeinFadeOut(container) {
-      var currentIndex = 0;
-      var imgLimit = 3;
-      var imgs = container.children;
-      var noop = function() {};
-
-      function hideImg(imgNode) {
-        imgNode.classList.remove("content-animated-img--display-active");
-        imgNode.classList.add("content-animated-img--display-hidden");
-      }
-
-      function activateImg(imgNode) {
-        imgNode.classList.remove("content-animated-img--display-hidden");
-        imgNode.classList.add("content-animated-img--display-active");
-      }
-
-      function nextImg() {
-        hideImg(imgs[currentIndex]);
-        currentIndex++;
-        activateImg(imgs[currentIndex]);
-      }
-
-      function nextImgReset() {
-        hideImg(imgs[currentIndex]);
-        currentIndex = 0;
-        activateImg(imgs[currentIndex]);
-      }
-
-      setInterval(function() {
-        if (currentIndex >= (imgLimit - 1) && currentIndex !== 0) {
-          nextImgReset();
-        } else {
-          nextImg();
-        }
-      }, 8000);
-    };
-  }
-
-})(document);
+})();
