@@ -59,9 +59,14 @@ a {
 
 .hero {
   background-color: #061524;
+  height: calc(100vh - 35px);
 }
 div.hero-container {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 35px);
 }
 
 .top-bar {
@@ -86,21 +91,19 @@ div.hero-container {
   animation-delay: 2s;
 }
 .prompt {
+  display: none;
   color: var(--color-offwhite-dark1, #a7a9ad);
 }
 .prompt-display--hidden {
-  animation: prompt-fadeleft 1s, fadeout 1s;
+  animation: prompt-fadeleft 500ms, fadeout 500ms;
   opacity: 0;
 }
 .prompt-display--active {
   display: block;
   opacity: 1;
-  animation: prompt-faderight 1s, fadein 1s;
+  animation: prompt-faderight 500ms, fadein 500ms;
 }
 
-.profile {
-  padding: 120px 0;
-}
 .portrait {
   border-radius: 50%;
   display: block;
@@ -109,13 +112,13 @@ div.hero-container {
   box-shadow: 0px 0px 100px rgba(255, 255, 255, .4);
 }
 .name {
-  font-size: 40px;
+  font-size: 35px;
   margin: 15px 0 0 0;
   color: var(--color-offwhite, #ece9e8);
   text-align: center;
 }
 .quote {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   font-weight: 400;
   color: var(--color-offwhite-dark1, #a7a9ad);
@@ -317,8 +320,17 @@ div.hero-container {
 
   /* Hero */
 
+  .prompt {
+    display: block;
+  }
   .portrait {
     max-width: 180px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .quote {
+    font-size: 24px;
   }
 
   .bottom-bar .link-list {
